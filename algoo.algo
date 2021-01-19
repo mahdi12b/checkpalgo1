@@ -1,0 +1,18 @@
+ALGORITHM algorithm_name
+VAR
+    st : STRING :=  '';
+    numchar , numWord , numVowels   : INTEGER := 0
+BEGIN
+WHILE (st <> '.') DO
+    Read(st)
+    numchar++
+    if(st = " ")DO
+    numWord++
+    END_IF
+    if (st in ['a','i', 'e', 'o', 'u', 'y'])
+    numVowels ++
+    END_IF
+END_WHILE
+   Write(numWord+=1)
+   Write(numchar-=numWord)
+   Write(numVowels)
